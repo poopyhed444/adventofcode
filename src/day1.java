@@ -4,13 +4,13 @@ import java.util.Scanner;
 import java.util.ArrayList;
 
 
-public class Main {
+public class day1 {
 
     static int sum = 0;
 
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<Integer>();
-        try (Scanner scanner = new Scanner(Paths.get("src//input.txt"))) {
+        try (Scanner scanner = new Scanner(Paths.get("src//day1.txt"))) {
 
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
