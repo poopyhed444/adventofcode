@@ -23,15 +23,12 @@ public class day4pt2 {
                 if (line.isEmpty()) {
                     break;
                 } else {
-                    // java is pretty weird lol. whhy can't i use 3 conditionals in one if statement?
-                    if ((min <= min2) && (min2 <= max)) {
+                    // java is pretty weird lol with conditionals. use python smh
+                    if ((min <= min2) && (min2 <= max) || ((min <= max2) && (max2 <= max))) {
                         pairs += 1;
-                    } else if ((min <= max2) && (max2 <= max)) {
+                    } else if (min2 <= min && max <= max2) {
                         pairs += 1;
-                    } else if ((min2 <= min) && (max <= max2)) {
-                        pairs += 1;
-                    } else if ((min2 <= max) && (max <= max2)) {
-                        pairs += 1;
+
                     }
 
                 }
